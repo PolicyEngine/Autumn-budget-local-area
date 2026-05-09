@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect, useMemo } from "react";
 import ConstituencyMetrics from "./ConstituencyMetrics";
 import ConstituencyDemographicChart from "./ConstituencyDemographicChart";

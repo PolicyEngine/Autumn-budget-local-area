@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect, useMemo } from "react";
 import PolicySelector from "./components/PolicySelector";
 import ConstituencySelector from "./components/ConstituencySelector";
