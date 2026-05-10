@@ -72,11 +72,11 @@ function LocalAreaTab({
           winnersLosersRes,
           householdScatterRes,
         ] = await Promise.all([
-          fetch("/data/constituency.csv"),
-          fetch("/data/demographic_constituency.csv"),
-          fetch("/data/distributional_impact.csv"),
-          fetch("/data/winners_losers.csv"),
-          fetch("/data/household_scatter.csv"),
+          fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/constituency.csv`),
+          fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/demographic_constituency.csv`),
+          fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/distributional_impact.csv`),
+          fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/winners_losers.csv`),
+          fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/household_scatter.csv`),
         ]);
 
         const constituencyCSV = await constituencyRes.text();

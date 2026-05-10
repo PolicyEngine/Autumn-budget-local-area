@@ -146,7 +146,7 @@ function App() {
   useEffect(() => {
     const loadConstituencies = async () => {
       try {
-        const res = await fetch("/data/constituency.csv");
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/constituency.csv`);
         const csvText = await res.text();
         setConstituencyData(parseCSV(csvText));
       } catch (error) {
