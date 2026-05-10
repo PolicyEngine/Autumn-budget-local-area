@@ -41,7 +41,7 @@
   margin-bottom: 32px;
   gap: var(--pe-space-md);
   position: sticky;
-  top: 0;
+  top: var(--spacing-header, 58px);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
