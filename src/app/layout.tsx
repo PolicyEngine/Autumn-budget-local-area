@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import PolicyEngineHeader from '@/components/PolicyEngineHeader';
 
 export const metadata: Metadata = {
   title: 'UK Autumn Budget 2025: Local area analysis',
@@ -31,7 +32,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <PolicyEngineHeader />
+        {children}
+      </body>
     </html>
   );
 }
