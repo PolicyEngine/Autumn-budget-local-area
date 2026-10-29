@@ -2,7 +2,7 @@
 
 Interactive dashboard exploring how the UK Autumn Budget 2025 affects households at the constituency level.
 
-**Live demo:** https://autumn-budget-local-area.vercel.app
+**Live demo:** https://policyengine.org/uk/local-areas-dashboard
 
 ## Features
 
